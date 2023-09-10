@@ -12,6 +12,11 @@
     "@mui/icons-material": "^5.14.8",
     "@mui/material": "^5.14.8",
     "@reduxjs/toolkit": "^1.9.5",
+    "next": "^13.4.19",
     "redux": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.6.0",
+    "typescript": "5.2.2"
   }
 }
