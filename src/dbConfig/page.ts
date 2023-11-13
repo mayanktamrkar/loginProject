@@ -12,15 +12,15 @@ const uri = `mongodb+srv://${username}:${password}@cluster0.4xrzklp.mongodb.net/
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 
 
-const options = {
-  useUnifiedTopology: true,
-  useNewUrlParser: true,
-}
+// const options = {
+//   useUnifiedTopology: true,
+//   useNewUrlParser: true,
+// }
 
 let clientPromise:any
 
 try {
-  const client = new MongoClient(uri, options)
+  const client = new MongoClient(uri)
    clientPromise = client.connect()
   
 } catch (error) {

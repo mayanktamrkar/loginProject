@@ -1,8 +1,5 @@
 import clientPromise from "../../../../dbConfig/page";
-import User from "@/src/model/userModel";
-// import { log } from 'console';
 import { NextRequest, NextResponse } from "next/server";
-import React from "react";
 import jwt from "jsonwebtoken";
 
 // run()
@@ -11,11 +8,6 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import type { Readable } from "node:stream";
 
 // EXPORT config to tell Next.js NOT to parse the body
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
 
 // Get raw body as string
 async function getRawBody(readable: Readable): Promise<Buffer> {

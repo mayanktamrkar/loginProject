@@ -10,7 +10,7 @@ const Admin = () => {
     password: "",
   });
 
-  const onChangeHandler = (e) => {
+  const onChangeHandler = (e:any) => {
     const name = e.target.name
     const value = e.target.value
     

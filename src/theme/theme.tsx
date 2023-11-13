@@ -15,7 +15,7 @@ let theme = createTheme({
   },
 });
 
-function CustomThemeProvider({ children }) {
+function CustomThemeProvider({ children }: any) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }
 
